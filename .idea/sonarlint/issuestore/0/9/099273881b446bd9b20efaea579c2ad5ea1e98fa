@@ -1,0 +1,10 @@
+
+dsquid:S2142%"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8¢ËÔ‚£-
+V
+squid:S106""9Replace this use of System.out or System.err by a logger.(ÆÀûı8¢ËÔ‚£-
+U
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ú¤¯K8ıŞ÷ş¢-
+>squid:S1700?"Rename field "exchangeRate"(öÍÄğûÿÿÿÿ8†şî‚£-
+V
+squid:S106)"9Replace this use of System.out or System.err by a logger.(…¯ô©8ÇüÅı¢-
+Fsquid:S1148&"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¢ËÔ‚£-
