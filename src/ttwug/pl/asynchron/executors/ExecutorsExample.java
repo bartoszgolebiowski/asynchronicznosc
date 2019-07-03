@@ -73,7 +73,7 @@ public class ExecutorsExample {
     public ExecutorsExample(List<Product> products, Service service) {
         this.executorService =
                 new ThreadPoolExecutor(5, 5, 0L, TimeUnit.MILLISECONDS,
-                        new LinkedBlockingQueue<Runnable>());
+                        new LinkedBlockingQueue<>());
 
         this.products = products;
         this.service = service;

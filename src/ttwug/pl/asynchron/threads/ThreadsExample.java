@@ -51,6 +51,7 @@ public class ThreadsExample {
 
         @Override
         public void run() {
+            System.out.println(Thread.currentThread().getName());
             this.price = supplier.get();
         }
 
@@ -69,6 +70,7 @@ public class ThreadsExample {
 
         @Override
         public void run() {
+            System.out.println(Thread.currentThread().getName());
             this.exchangeRate = supplier.get();
         }
 

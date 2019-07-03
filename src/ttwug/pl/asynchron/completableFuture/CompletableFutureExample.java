@@ -69,26 +69,55 @@ public class CompletableFutureExample {
         long start = System.currentTimeMillis();
         System.out.println("CompletableFuture");
 
-//        CompletableFuture<Double> exchangeRateFuture
-//                = CompletableFuture.supplyAsync(() -> service.getExchangeRate());
 
         CompletableFuture<Double> exchangeRateFuture
                 = CompletableFuture.supplyAsync(() -> service.getExchangeRate(), executorService);
+
+//        CompletableFuture<Void> exchangeRateFutureVoid
+//                = CompletableFuture.runAsync(() -> service.getExchangeRate(), executorService);
 
         List<CompletableFuture<Double>> productsPriceFutures = new ArrayList<>();
 
         for (Product product : products) {
             productsPriceFutures.add(
-                    CompletableFuture.supplyAsync(() -> service.getMethod(product.getName())));
+                    CompletableFuture.supplyAsync(() -> service.getMethod(product.getName()), executorService));
         }
 
         for (CompletableFuture<Double> productsPriceFuture : productsPriceFutures) {
             productsPriceFuture
                     .thenCombine(exchangeRateFuture, (price, exchange) -> price * exchange)
-                    .thenAccept(o1 -> System.out.println(String.format("product costs %f zl from CompletableFuture", o1)));
+                    .thenAccept(o1 -> {
+                        System.out.println(String.format("product costs %f zl from CompletableFuture", o1));
+                    });
         }
 
         System.out.println(String.format("It took us %d ms to calculate this", System.currentTimeMillis() - start));
+
+        //useCase();
+    }
+
+    private void useCase() {
+        CompletableFuture<Double> first
+                = CompletableFuture.supplyAsync(() -> service.getExchangeRate(), executorService);
+
+        CompletableFuture<Double> second
+                = CompletableFuture.supplyAsync(() -> {
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return 66d;
+        }, executorService);
+
+        first
+                .thenApply(Double::doubleValue)
+                .thenCombine(second, (o1, o2) -> {
+                    System.out.println(o1);
+                    System.out.println(o2);
+                    return o1 * o2;
+                })
+                .thenAccept(System.out::println);
     }
 
 }

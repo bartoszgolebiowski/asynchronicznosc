@@ -1,9 +1,22 @@
 
-wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ôÖœ­úÿÿÿÿ
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ð©¿ûÿÿÿÿ8‡€ê¶»-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(˜±úÑ8‡€ê¶»-
+hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÃÎ´8‡€ê¶»-
+nsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(û­¥²ýÿÿÿÿ8‡€ê¶»-
 [
-squid:S106"9Replace this use of System.out or System.err by a logger.(¢õöƒúÿÿÿÿ8›ûâƒ£-
+squid:S106F"9Replace this use of System.out or System.err by a logger.(¢õöƒúÿÿÿÿ8›ûâƒ£-
 V
-squid:S106)"9Replace this use of System.out or System.err by a logger.(…¯ô©8›ûâƒ£-
-V
-squid:S106&"9Replace this use of System.out or System.err by a logger.(Ž§Ùë8›ûâƒ£-
-Nsquid:S1611&"0Remove the parentheses around the "o1" parameter(Ž§Ùë8›ûâƒ£-
+squid:S106["9Replace this use of System.out or System.err by a logger.(…¯ô©8›ûâƒ£-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‹ÏõŸÿÿÿÿÿ8‡€ê¶»-
+hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ØÒê}8‡€ê¶»-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ãïìÆøÿÿÿÿ8‡€ê¶»-
+wsquid:S00120."ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ôÖœ­úÿÿÿÿ
+nsquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8‡€ê¶»-
+hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(„â¯D8‡€ê¶»-
+isquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(é µì8‡€ê¶»-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¥•ÖÏ8‡€ê¶»-
+isquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(ßôÆ×8‡€ê¶»-
+nsquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(öÜ·úÿÿÿÿ8‡€ê¶»-
+nsquid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(ãïìÆøÿÿÿÿ8‡Ôœ·»-
+[
+squid:S106X"9Replace this use of System.out or System.err by a logger.(ø¸ºšûÿÿÿÿ8›ûâƒ£-

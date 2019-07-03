@@ -1,9 +1,18 @@
 
 V
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ä‚ £8•æ¼ÿ¢-
-dsquid:S21424"FEither re-interrupt this method or rethrow the "InterruptedException".(üŸ´Â8ø±‹€£-
-Fsquid:S11485"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ø±‹€£-
+squid:S106a"9Replace this use of System.out or System.err by a logger.(¶èŽþ8Ä¼Î·»-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(©‚Òâ8£ÑÅ·»-
+isquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(‘Üã«8£ÑÅ·»-
+nsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(ñ³¸¾ùÿÿÿÿ8£ÑÅ·»-
+hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(„â¯D8£ÑÅ·»-
+isquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(é µì8£ÑÅ·»-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ð©¿ûÿÿÿÿ8£ÑÅ·»-
+isquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(¢ßÒÆ8£ÑÅ·»-
 V
-squid:S106'"9Replace this use of System.out or System.err by a logger.(¶èŽþ8Ç¸©‚£-
+squid:S106d"9Replace this use of System.out or System.err by a logger.(…¯ô©8Ä¼Î·»-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÚËÚ…8£ÑÅ·»-
+Fsquid:S1148o"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Ä¼Î·»-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(™¯Ý¯ýÿÿÿÿ8£ÑÅ·»-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(­ˆ¤òÿÿÿÿÿ8£ÑÅ·»-
 V
-squid:S106*"9Replace this use of System.out or System.err by a logger.(…¯ô©8ÈˆÁ£-
+squid:S106T"9Replace this use of System.out or System.err by a logger.(Ä‚ £8Ä¼Î·»-

@@ -6,6 +6,7 @@ import ttwug.pl.asynchron.executors.ExecutorsExample;
 import ttwug.pl.asynchron.heavyMethods.Service;
 import ttwug.pl.asynchron.synchronous.SynchronousExample;
 import ttwug.pl.asynchron.threads.ThreadsExample;
+import ttwug.pl.asynchron.threadsAndRunnable.ThreadAndRunnableExample;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,11 +14,11 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<Product> products = initializeProducts();
-       // new CompletableFutureExample(products, new Service()).main();
-       // new SynchronousExample(products, new Service()).main();
-        //    new ThreadsExample(products, new Service()).main();
-           new ExecutorsExample(products, new Service()).main();
-
+        new CompletableFutureExample(products, new Service()).main();
+        new SynchronousExample(products, new Service()).main();
+//        new ThreadsExample(products, new Service()).main();
+//        new ExecutorsExample(products, new Service()).main();
+//        new ThreadAndRunnableExample().main(new String[]{});
     }
 
 //    private static List<Product> initializeProducts() {
@@ -33,13 +34,13 @@ public class Main {
 //        return productList;
 //    }
 
-     private static List<Product> initializeProducts() {
+    private static List<Product> initializeProducts() {
         List<Product> productList = new ArrayList<>();
         Product fridge = new Product("Fridge");
         Product car = new Product("Car");
         Product rolex = new Product("Rolex");
         Product iphone = new Product("Iphone");
-       for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             productList.add(fridge);
             productList.add(car);
             productList.add(rolex);
